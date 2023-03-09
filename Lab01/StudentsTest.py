@@ -17,7 +17,6 @@ class Test(unittest.TestCase):
             print(self.user_id[i], self.user_name[i])
             for j in range(len(self.user_id)-1):
                 self.assertNotEqual(self.user_id[i], self.user_id[j])
-        pass
         print("\nFinish set_name test\n\n")
 
 
@@ -34,4 +33,3 @@ class Test(unittest.TestCase):
                 self.assertIs(name, self.user_name[self.user_id[i]])
             else:
                 self.assertNotIn(name, self.students.name)
-        pass
